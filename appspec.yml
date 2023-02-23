@@ -1,9 +1,0 @@
-version: 0.0
-os: linux
-files:
-  - source: /
-    destination: /home/ec2-user/cicdtest
-hooks:
-  ApplicationStart:
-    - location: scripts/applicationStart.sh
-      runas: root
