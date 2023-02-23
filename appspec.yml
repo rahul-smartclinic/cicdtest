@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/cicdtest
+hooks:
+  BeforeInstall:
+    - location: scripts/beforeInstall.sh
+      runas: root
+  ApplicationStart:
+    - location: scripts/applicationStart.sh
+      runas: root
