@@ -1,9 +1,19 @@
 version: 0.0
 os: linux
+
 files:
   - source: /
-    destination: /home/ec2-user/cicdtest
+    destination: /home/ec2-user
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: root
+    group: root
+
 hooks:
+      
   ApplicationStart:
     - location: scripts/applicationStart.sh
+      timeout: 800
       runas: root
