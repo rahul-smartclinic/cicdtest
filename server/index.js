@@ -11,7 +11,7 @@ app.get("/",(req, res)=>{
     success: true,
     users : [{
       id:1,
-      name: "Rahul"
+      name: "Rahul Kumar v2"
     }],
     // ALL_SECRET_KEY: process.env
   })
