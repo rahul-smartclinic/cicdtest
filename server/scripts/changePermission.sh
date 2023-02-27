@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -R ec2-user:ec2-user /home/ec2-user/my-server
+chown -R ec2-user:ec2-user /home/ec2-user/clinic-server
