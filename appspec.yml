@@ -3,17 +3,11 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ec2-user
-
-permissions:
-  - object: /
-    pattern: "**"
-    owner: root
-    group: root
+    destination: /home/ec2-user/my-server
 
 hooks:
       
   ApplicationStart:
     - location: scripts/applicationStart.sh
       timeout: 800
-      runas: ec2-user
+      runas: root

@@ -1,6 +1,5 @@
 #!/bin/bash
-cd /home/ec2-user
+cd /home/ec2-user/my-server
 npm install
-npm install -g pm2
 pm2 start index.js
 
