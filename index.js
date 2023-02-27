@@ -9,8 +9,11 @@ app.get("/",(req, res)=>{
   res.json({
     message: "OK",
     success: true,
-    users : [],
-    ALL_SECRET_KEY: process.env
+    users : [{
+      id:1,
+      name: "Rahul"
+    }],
+    // ALL_SECRET_KEY: process.env
   })
 })
 
