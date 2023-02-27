@@ -6,7 +6,8 @@ app.get("/",(req, res)=>{
   res.json({
     message: "OK",
     success: true,
-    users : []
+    users : [],
+    SECRET_KEY: process.env.SECRET_KEY
   })
 })
 
