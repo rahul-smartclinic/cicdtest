@@ -5,7 +5,8 @@ const PORT = 5001
 app.get("/",(req, res)=>{
   res.json({
     message: "OK",
-    success: true
+    success: true,
+    users : []
   })
 })
 
