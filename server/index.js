@@ -11,7 +11,8 @@ app.get("/",(req, res)=>{
     success: true,
     users : [{
       id:1,
-      name: "Rahul Kumar v2"
+      name: "Rahul Kumar v2",
+      detail: "Moved all files to sever to debug"
     }],
     // ALL_SECRET_KEY: process.env
   })

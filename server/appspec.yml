@@ -2,15 +2,15 @@ version: 0.0
 os: linux
 
 files:
-  - source: /
+  - source: /server
     destination: /home/ec2-user/clinic-server
 
 hooks:
       
   ApplicationStart:
-    - location: server/scripts/changePermission.sh
+    - location: scripts/changePermission.sh
       timeout: 800
       runas: root
-    - location: server/scripts/applicationStart.sh
+    - location: scripts/applicationStart.sh
       timeout: 800
       runas: ec2-user
