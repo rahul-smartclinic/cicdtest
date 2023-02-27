@@ -1,6 +1,9 @@
 const express = require('express');
+const path = require('path'); 
+require('dotenv').config();
 const app = express();
 const PORT = 5001
+
 
 app.get("/",(req, res)=>{
   res.json({
